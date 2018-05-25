@@ -3,4 +3,21 @@
 
 	<string name="dummy_button">Dummy Button</string>
 	<string name="dummy_content">DUMMY\nCONTENT</string>
+	<string name="title_activity_login">Iniciar Sesión</string>
+
+	<!-- Strings related to login -->
+	<string name="prompt_email">Teléfono</string>
+	<string name="prompt_password">Contraseña</string>
+	<string name="action_sign_in">iniciar Sesión o Registrarse</string>
+	<string name="action_sign_in_short">Iniciar Sesion</string>
+	<string name="error_invalid_email">TTelefono incorrecto</string>
+	<string name="error_invalid_password">La contraseña es muy corta</string>
+	<string name="error_incorrect_password">Contraseña incorrecta</string>
+	<string name="error_field_required">Campo Requerido</string>
+	<string name="permission_rationale">"Contacts permissions are needed for providing email
+		completions."
+	</string>
+
+	<!-- Strings related to user -->
+	<string name="userName">Dopinder Kapoor</string>
 </resources>
