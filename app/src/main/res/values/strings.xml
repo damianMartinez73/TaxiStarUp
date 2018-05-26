@@ -10,7 +10,7 @@
 	<string name="prompt_password">Contraseña</string>
 	<string name="action_sign_in">iniciar Sesión o Registrarse</string>
 	<string name="action_sign_in_short">Iniciar Sesion</string>
-	<string name="error_invalid_email">TTelefono incorrecto</string>
+	<string name="error_invalid_email">Telefono incorrecto</string>
 	<string name="error_invalid_password">La contraseña es muy corta</string>
 	<string name="error_incorrect_password">Contraseña incorrecta</string>
 	<string name="error_field_required">Campo Requerido</string>
@@ -20,4 +20,10 @@
 
 	<!-- Strings related to user -->
 	<string name="userName">Dopinder Kapoor</string>
+
+	<!-- Strings related to main Screen -->
+	<string name="nuevoViaje">Pedir Nuevo Viaje</string>
+	<string name="cupones">Cupones</string>
+	<string name="entretenimiento">Momos :v</string>
+
 </resources>
