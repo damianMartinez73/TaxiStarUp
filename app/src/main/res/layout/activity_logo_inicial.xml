@@ -34,7 +34,7 @@
 			android:layout_height="123dp"
 			android:layout_gravity="center"
 			android:translationY="-100dp"
-			app:srcCompat="@android:drawable/ic_menu_report_image"/>
+			app:srcCompat="@mipmap/logo_round" />
 	</FrameLayout>
 
 </FrameLayout>
