@@ -1,22 +1,22 @@
 package com.company.damia.taxistarup;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
-import android.content.Intent;
 
 public class LogoInicial extends AppCompatActivity {
     private static final boolean AUTO_HIDE = true;
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
     /** Dispositivos antiguos necesitan algo de tiempor para esconder la UI al usuario*/
-    private static final int UI_ANIMATION_DELAY = 300;
+    private static final int UI_ANIMATION_DELAY = 150;
     private final Handler mHideHandler = new Handler();
     private View mContentView;
-    private static int TIME_OUT = 1000;
+    private static int TIME_OUT = 1500;
 
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
