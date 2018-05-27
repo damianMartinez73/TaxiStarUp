@@ -49,11 +49,26 @@
                 android:orientation="vertical" >
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/editText5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="numberDecimal" />
+                    android:inputType="textMultiLine"
+                    android:text="El total de tu recorrido fue de " />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="3 cubitos de ricopollo" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ta gueno" />
             </LinearLayout>
         </ScrollView>
 
