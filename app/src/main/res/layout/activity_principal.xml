@@ -13,7 +13,7 @@
 		android:layout_width="129dp"
 		android:layout_height="116dp"
 		android:layout_marginTop="16dp"
-		android:background="@android:color/background_light"
+		android:background="@android:color/transparent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
@@ -51,22 +51,26 @@
 		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
+			android:gravity="center_vertical"
 			android:orientation="vertical">
 
 			<Button
 				android:id="@+id/bViajeNuevo"
 				android:layout_width="match_parent"
 				android:layout_height="60dp"
+				android:layout_marginBottom="20dp"
 				android:text="@string/nuevoViaje"
 				app:layout_constraintEnd_toEndOf="@+id/scrollView2"
-				app:layout_constraintHorizontal_bias="0.514"
+				app:layout_constraintHorizontal_bias="16"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toTopOf="@+id/scrollView2"/>
 
 			<Button
 				android:id="@+id/bCupones"
+				style="@style/Animation.AppCompat.Tooltip"
 				android:layout_width="match_parent"
 				android:layout_height="60dp"
+				android:layout_marginBottom="20dp"
 				android:text="@string/cupones"
 				tools:layout_editor_absoluteX="19dp"
 				tools:layout_editor_absoluteY="222dp"/>
@@ -75,18 +79,20 @@
 				android:id="@+id/bEntretenimiento"
 				android:layout_width="match_parent"
 				android:layout_height="60dp"
+				android:layout_marginBottom="20dp"
 				android:text="@string/entretenimiento"/>
 
 			<Button
 				android:id="@+id/binformacion"
 				android:layout_width="match_parent"
 				android:layout_height="60dp"
+				android:layout_marginBottom="20dp"
 				android:text="@string/informacion"/>
 
 			<Button
 				android:id="@+id/bcontacto"
 				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
+				android:layout_height="60dp"
 				android:text="@string/contacto"/>
 
 		</LinearLayout>
