@@ -189,14 +189,46 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
         }
     }
 
-    /* TODO: Modificar para que phone solo reciba numeros*/
-    private boolean isPhoneValid(String phone) {
-        return phone.length() == 10;
+    /* TODO: HACER QUE VALIDE QUE EL NUMERO SEA VALIDO
+    *       (LISTO)Modificar para que phone solo reciba numeros
+     * */
+    private boolean isPhoneValid(String phone)
+    {
+        if(phone.length() == 10)
+        {
+            char cc;
+            for(int i = 0; i < 10; i++)
+            {
+                cc = phone.charAt(i);
+                if(!(cc >= '0' && cc <= '9'))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
     }
 
-    private boolean isPasswordValid(String password) {
-        //TODO: ReMPLAZAR POR UNA CONTRASEÑA SEGURA
-        return password.length() > 4;
+    private boolean isPasswordValid(String password)
+    {
+        //(ListoTODO): ReMPLAZAR POR UNA CONTRASEÑA SEGURA
+        boolean UPPER, DOWNER, NUMBER, ESPECIAL;
+        UPPER = DOWNER = NUMBER = ESPECIAL = false;
+        char cc;
+        if(password.length() >= 4)
+        {
+            for (int i = 0; i < password.length() && !UPPER && !DOWNER && !NUMBER && !ESPECIAL; i++)
+            {
+                cc = password.charAt(i);
+                if (cc >= 'a' && cc <= 'z' && !DOWNER) DOWNER = true;
+                if (cc >= 'A' && cc <= 'Z' && !UPPER) UPPER = true;
+                if ((cc >= '!' && cc <= '/') || (cc >= ':' && cc <= '@') || (cc >= '[' && cc <= '`') || (cc >= '{' && cc <= '~') && !ESPECIAL) ESPECIAL = true;
+                if (cc >= '0' && cc <= '9' && !NUMBER) NUMBER = true;
+            }
+            return UPPER && DOWNER && NUMBER && ESPECIAL;
+        }
+        return false;
     }
 
     /**

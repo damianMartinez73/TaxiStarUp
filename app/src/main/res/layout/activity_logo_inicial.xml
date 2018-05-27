@@ -23,18 +23,19 @@
 
 	<!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
-	<FrameLayout
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:fitsSystemWindows="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
 
-		<ImageView
-			android:id="@+id/imageView"
-			android:layout_width="134dp"
-			android:layout_height="123dp"
-			android:layout_gravity="center"
-			android:translationY="-100dp"
-			app:srcCompat="@mipmap/logo_round" />
-	</FrameLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="134dp"
+            android:layout_height="123dp"
+            android:layout_gravity="center"
+            android:translationY="-100dp"
+            app:srcCompat="@mipmap/logo_round" />
+
+    </FrameLayout>
 
 </FrameLayout>
