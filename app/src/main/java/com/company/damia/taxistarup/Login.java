@@ -218,7 +218,7 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
         char cc;
         if(password.length() >= 4)
         {
-            for (int i = 0; i < password.length() && !UPPER && !DOWNER && !NUMBER && !ESPECIAL; i++)
+            for (int i = 0; i < password.length(); i++)
             {
                 cc = password.charAt(i);
                 if (cc >= 'a' && cc <= 'z' && !DOWNER) DOWNER = true;
@@ -226,7 +226,8 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
                 if ((cc >= '!' && cc <= '/') || (cc >= ':' && cc <= '@') || (cc >= '[' && cc <= '`') || (cc >= '{' && cc <= '~') && !ESPECIAL) ESPECIAL = true;
                 if (cc >= '0' && cc <= '9' && !NUMBER) NUMBER = true;
             }
-            return UPPER && DOWNER && NUMBER && ESPECIAL;
+            if(UPPER && DOWNER && NUMBER && ESPECIAL)
+                return true;
         }
         return false;
     }
