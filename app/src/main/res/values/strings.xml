@@ -23,6 +23,8 @@
 	<string name="nuevoViaje">Pedir Nuevo Viaje</string>
 	<string name="cupones">Cupones</string>
 	<string name="entretenimiento">Momos :v</string>
+	<string name="informacion">Información</string>
+	<string name="contacto">Contacto</string>
 
     <string name="title_activity_pantalla_total">PantallaTotal</string>
     <string name="dummy_button">Dummy Button</string>
